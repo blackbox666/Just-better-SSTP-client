@@ -1,30 +1,26 @@
 # Just better SSTP
 
-An SSTP VPN client for Windows with per-profile routes and simultaneous connections to overlapping private networks. The Windows x64 preview is available under [Releases](https://github.com/blackbox666/Just-better-SSTP-client/releases). The current interface is in Russian.
+**English** · [Русский](README.ru.md)
 
-Клиент SSTP VPN для Windows. Настройте, какой трафик идёт через VPN, и подключайтесь
-к нескольким сетям одновременно, даже если у них совпадают локальные адреса.
+An SSTP VPN client for Windows. Choose which traffic goes through the VPN and connect to several networks at once, even when they use the same private addresses. The interface is currently in Russian.
 
-**[Скачать Windows x64 →](https://github.com/blackbox666/Just-better-SSTP-client/releases)**
+**[Download for Windows x64 →](https://github.com/blackbox666/Just-better-SSTP-client/releases)**
 
-![Окно Just better SSTP с демонстрационными профилями](desktop.png)
+![Just better SSTP with demo profiles](desktop.png)
 
-- Отдельное управление каждым VPN-подключением.
-- Полный IPv4-туннель, только частные сети или выбранные маршруты.
-- Автоматические и ручные псевдонимы для совпадающих удалённых подсетей.
-- Импорт SSTP-профилей Windows, локальное защищённое хранение и зашифрованные резервные копии.
-- Поиск устройств в настроенных сетях подключённого профиля.
+- Control each VPN connection independently.
+- Choose a full IPv4 tunnel, private networks only, or specific routes.
+- Assign automatic or manual aliases to overlapping remote subnets.
+- Import Windows SSTP profiles, store credentials securely on your device, and create encrypted backups.
+- Discover devices on the configured networks of a connected profile.
 
-## Как запустить
+## Getting started
 
-1. В разделе [Releases](https://github.com/blackbox666/Just-better-SSTP-client/releases) скачайте `Just-better-SSTP-…-windows-x64.zip` из списка Assets и распакуйте архив целиком.
-2. Если среда Visual C++ ещё не установлена, скачайте [Microsoft Visual C++ Redistributable x64](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist/).
-3. Запустите `sstp_client.exe` от имени администратора, чтобы приложение могло создать VPN-адаптер и настроить маршруты.
-4. Добавьте профиль или выберите **Настройки → Импорт из Windows**. Затем подключите нужный профиль.
+1. Open [Releases](https://github.com/blackbox666/Just-better-SSTP-client/releases), download `Just-better-SSTP-…-windows-x64.zip` from **Assets**, and extract the entire archive.
+2. If the Visual C++ runtime is missing, install the [Microsoft Visual C++ Redistributable x64](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist/).
+3. Run `sstp_client.exe` as administrator so the app can create the VPN adapter and configure routes.
+4. Add a profile or choose **Settings → Import from Windows** (**Настройки → Импорт из Windows**). Then connect to the profile.
 
-Первый выпуск — предварительная версия без цифровой подписи приложения. Проверки
-проводились на Windows 10 x64; выпусков для macOS, iOS и Windows ARM64 пока нет.
-Здесь публикуются готовые сборки; исходный код приложения не публикуется.
+The first release is an unsigned preview tested on Windows 10 x64. Platform releases for macOS, iOS, and Windows ARM64 are pending. This repository distributes ready-to-run builds.
 
-Об ошибках можно сообщить в [Issues](https://github.com/blackbox666/Just-better-SSTP-client/issues). Не прикладывайте пароли,
-резервные копии и сведения о частных серверах.
+Report bugs in [Issues](https://github.com/blackbox666/Just-better-SSTP-client/issues). Keep passwords, backup files, and private server details out of reports.
