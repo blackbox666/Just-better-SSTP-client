@@ -2,11 +2,11 @@
 
 **English** · [Русский](README.ru.md)
 
-An SSTP VPN client for Windows. Choose which traffic goes through the VPN and connect to several networks at once, even when they use the same private addresses. The interface is currently in Russian.
+An SSTP VPN client for Windows. Choose which traffic goes through the VPN and connect to several networks at once, even when they use the same private addresses.
 
-**[Download 0.1 for Windows x64 →](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1)**
+**[Download 0.1.3 for Windows x64 →](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1.3)**
 
-![Just better SSTP with demo profiles](desktop.png)
+![Just better SSTP in English with demo profiles](desktop-en.png)
 
 - Control each VPN connection independently.
 - Choose a full IPv4 tunnel, private networks only, or specific routes.
@@ -18,10 +18,12 @@ An SSTP VPN client for Windows. Choose which traffic goes through the VPN and co
 
 ## Getting started
 
-1. Open [release 0.1](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1), download `Just-better-SSTP-0.1-windows-x64.zip` from **Assets**, and extract the entire archive.
+1. Open [release 0.1.3](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1.3), download `Just-better-SSTP-0.1.3-windows-x64.zip` from **Assets**, and extract the entire archive.
 2. If the Visual C++ runtime is missing, install the [Microsoft Visual C++ Redistributable x64](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist/).
 3. Run `sstp_client.exe` as administrator so the app can create the VPN adapter and configure routes.
-4. Add a profile or choose **Settings → Import from Windows** (**Настройки → Импорт из Windows**). Then connect to the profile.
+4. Add a profile or choose **Settings → Import from Windows**. Then connect to the profile.
+
+On first launch, the app uses Russian if your system language is Russian and defaults to English otherwise. You can change it under **Settings → Language**.
 
 Windows import reads the system VPN profiles on this PC. Enter the username and password at the first connection. A Windows profile with the **Automatic** tunnel type can be imported as SSTP after confirmation if the server supports SSTP.
 
@@ -29,9 +31,9 @@ Windows import reads the system VPN profiles on this PC. Enter the username and 
 
 ## Move profiles to another PC
 
-1. Open **Settings → Store profiles in the app folder** (**Настройки → Хранить профили в папке приложения**) and set a password. The app saves your current profiles and future changes in the encrypted `sstp-profiles.sstpvault` file next to `sstp_client.exe`.
+1. Open **Settings → Store profiles in the app folder** and set a password. The app saves your current profiles and future changes in the encrypted `sstp-profiles.sstpvault` file next to `sstp_client.exe`.
 2. Close the app and copy the entire folder, including the `.sstpvault` file, to the other Windows PC.
-3. Launch `sstp_client.exe`, select **Open profiles** (**Открыть профили**), and enter the same password.
+3. Launch `sstp_client.exe`, select **Open profiles**, and enter the same password.
 
 The Windows x64 build is unsigned and was tested on Windows 10. Builds for macOS, iOS, and Windows ARM64 are pending. This repository distributes ready-to-run builds.
 

@@ -5,9 +5,9 @@
 Клиент SSTP VPN для Windows. Настройте, какой трафик идёт через VPN, и подключайтесь
 к нескольким сетям одновременно, даже если у них совпадают локальные адреса.
 
-**[Скачать 0.1 для Windows x64 →](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1)**
+**[Скачать 0.1.3 для Windows x64 →](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1.3)**
 
-![Окно Just better SSTP с демонстрационными профилями](desktop.png)
+![Окно Just better SSTP на русском с демонстрационными профилями](desktop-ru.png)
 
 - Отдельное управление каждым VPN-подключением.
 - Полный IPv4-туннель, только частные сети или выбранные маршруты.
@@ -19,10 +19,12 @@
 
 ## Как запустить
 
-1. В [релизе 0.1](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1) скачайте `Just-better-SSTP-0.1-windows-x64.zip` из списка **Assets** и распакуйте архив целиком.
+1. В [релизе 0.1.3](https://github.com/blackbox666/Just-better-SSTP-client/releases/tag/v0.1.3) скачайте `Just-better-SSTP-0.1.3-windows-x64.zip` из списка **Assets** и распакуйте архив целиком.
 2. Если среда Visual C++ ещё не установлена, скачайте [Microsoft Visual C++ Redistributable x64](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist/).
 3. Запустите `sstp_client.exe` от имени администратора, чтобы приложение могло создать VPN-адаптер и настроить маршруты.
 4. Добавьте профиль или выберите **Настройки → Импорт из Windows**. Затем подключите нужный профиль.
+
+При первом запуске клиент использует русский язык на русскоязычной системе и английский в остальных случаях. Язык можно поменять в меню **Настройки → Язык**.
 
 Импорт читает системные VPN-профили на этом ПК. Логин и пароль нужно ввести при первом подключении. Профиль с типом «Автоматически» можно добавить как SSTP после подтверждения, если сервер поддерживает SSTP.
 
